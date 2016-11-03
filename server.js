@@ -9,12 +9,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/aboutus', function(req, res) {
-    res.sendFile(path.join(_dirname,'ui', 'aboutus.html'));
-});
+
 
 app.get('/contactus', function(req, res) {
-    res.sendFile(path.join(_dirname,'ui', 'contactus.html'));
+    res.sendFile(path.join(__dirname,'ui', 'contactus.html'));
 });
 
 app.get('/contactus', function(req, res) {
@@ -22,7 +20,7 @@ app.get('/contactus', function(req, res) {
 });
 
 app.get('/article', function(req, res) {
-    res.sendFile(path.join(_dirname,'ui', 'article.html'));
+    res.sendFile(path.join(__dirname,'ui', 'article.html'));
 });
 
 app.get('/gallery', function(req, res) {
