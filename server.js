@@ -9,18 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-
-
 app.get('/contactus', function(req, res) {
     res.sendFile(path.join(__dirname,'ui', 'contactus.html'));
-});
-
-app.get('/contactus', function(req, res) {
-    res.send("justice will be served");
-});
-
-app.get('/article', function(req, res) {
-    res.sendFile(path.join(__dirname,'ui', 'article.html'));
 });
 
 app.get('/gallery', function(req, res) {
@@ -35,7 +25,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/aboutus2', function (req, res) {
+app.get('/aboutus', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'aboutus2.html'));
 });
 
