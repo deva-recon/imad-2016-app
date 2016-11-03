@@ -17,6 +17,10 @@ app.get('/contactus', function(req, res) {
     res.sendFile(path.join(_dirname,'ui', 'contactus.html'));
 });
 
+app.get('/contactus', function(req, res) {
+    res.send("justice will be served");
+});
+
 app.get('/article', function(req, res) {
     res.sendFile(path.join(_dirname,'ui', 'article.html'));
 });
