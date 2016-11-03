@@ -24,7 +24,7 @@ app.get('/article', function(req, res) {
 });
 
 app.get('/gallery', function(req, res) {
-    res.sendFile(path.join(_dirname,'ui', 'gallery.html'));
+    res.sendFile(path.join(__dirname,'ui', 'gallery.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
