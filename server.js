@@ -17,6 +17,10 @@ app.get('/contactus', function(req, res) {
     res.sendFile(path.join(_dirname,'ui', 'contactus.html'));
 });
 
+app.get('/article', function(req, res) {
+    res.sendFile(path.join(_dirname,'ui', 'article.html'));
+});
+
 app.get('/gallery', function(req, res) {
     res.sendFile(path.join(_dirname,'ui', 'gallery.html'));
 });
