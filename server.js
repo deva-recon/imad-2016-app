@@ -9,14 +9,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/contactus', function(req, res) {
-    res.sendFile(path.join(__dirname,'ui', 'contactus.html'));
-});
-
-app.get('/gallery', function(req, res) {
-    res.sendFile(path.join(__dirname,'ui', 'gallery.html'));
-});
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -25,9 +17,6 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/aboutus', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'aboutus.html'));
-});
 
 
 
